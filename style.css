@@ -191,13 +191,18 @@ a.cta {
 
 .hero_img {
 	left: 100px;
+	flex-basis: 30%;
 }
-
+.intro {
+	flex-basis: 70%;
+}
 #hero {
+	display: flex;
 	background-image: url(./images/BG.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
+	justify-content: center;
 	z-index: 1;
 }
 #hero::after {
@@ -252,10 +257,10 @@ a.cta {
 	animation-delay: 2.5s;
 }
 #hero .hero {
-	max-width: 1200px;
-	margin: 0 auto;
+	max-width: 1280px;
+	margin: 0 20px;
 	padding: 0 50px;
-	justify-content: start;
+	justify-content: center;
 }
 
 /* Services Section */
@@ -274,6 +279,9 @@ a.cta {
 	width: 75%;
 	margin: 0 auto;
 	margin-bottom: 20px;
+}
+#services .service-top h1 span {
+	color: crimson;
 }
 #services .service-top p {
 	font-size: 1.4rem;
@@ -360,8 +368,18 @@ a.cta {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
+	text-align: center;
 }
 #projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+#projects .projects-header h1 span {
+	color: crimson;
+}
+#projects .projects-header p {
+	font-size: 1.4rem;
+	line-height: 2rem;
+	font-weight: 300;
 	margin-bottom: 50px;
 }
 #projects .all-projects {
@@ -370,6 +388,7 @@ a.cta {
 	justify-content: center;
 	flex-direction: column;
 }
+
 #projects .project-item {
 	display: flex;
 	align-items: center;
@@ -400,6 +419,13 @@ a.cta {
 	font-weight: 500;
 	margin-bottom: 5px;
 }
+#projects .project-item .project-info div {
+	transition: 0.3s ease transform;
+	width: 100%;
+}
+#projects .project-item:hover .project-info div {
+	transform: scale(0.9);
+}
 #projects .project-img {
 	display: flex;
 	flex-basis: 50%;
@@ -420,13 +446,40 @@ a.cta {
 	opacity: 0.7;
 }
 #projects .project-img img {
+	object-fit: cover;
 	transition: 0.3s ease transform;
 	width: 100%;
 }
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
-
+#projects .social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+#projects .social-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#projects .social-item a {
+	padding: 10px;
+	border: 2px solid blue;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+#projects .social-item a:hover {
+	transform: scale(1.1);
+	background-color: white;
+	border: white;
+}
+#projects .social-item img {
+	height: 50px;
+	width: 50px;
+}
 /* About me */
 
 #about {
@@ -446,6 +499,9 @@ a.cta {
 }
 #about .col-right {
 	width: 100%;
+}
+#about .col-right h1 span {
+	color: crimson;
 }
 #about .col-right h2 {
 	font-size: 1.5rem;
