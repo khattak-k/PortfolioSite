@@ -288,6 +288,7 @@ a.cta {
 }
 #services .services-item {
 	flex-basis: 80%;
+	height: 300px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -304,7 +305,6 @@ a.cta {
 	filter: grayscale(1);
 }
 #services .services-item:hover {
-	color: crimson;
 	transform: scale(1.1);
 	filter: grayscale(0);
 }
@@ -315,7 +315,7 @@ a.cta {
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-color: black;
+	background-color: crimson;
 	opacity: 0.5;
 	z-index: -1;
 }
@@ -338,6 +338,16 @@ a.cta {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+}
+#services .services-item h1 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: white;
+	animation: text_reveal_box 1s ease;
+	animation-delay: 0.5s;
 }
 
 /* Previous projects section  */
