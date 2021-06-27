@@ -192,6 +192,7 @@ a.cta {
 .hero_img {
 	left: 100px;
 	flex-basis: 30%;
+	overflow: hidden;
 }
 .intro {
 	flex-basis: 70%;
@@ -296,7 +297,7 @@ a.cta {
 }
 #services .services-item {
 	flex-basis: 80%;
-	height: 300px;
+	height: 400px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -632,7 +633,7 @@ a.cta {
 	}
 
 	#projects .project-item {
-		height: 250px;
+		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
